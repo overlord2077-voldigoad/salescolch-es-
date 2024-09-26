@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #001f3f; /* Azul escuro */
+    background-color: #003366; /* Azul escuro */
     color: white;
     padding: 20px;
     text-align: center;
@@ -31,6 +31,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+.cta-button {
+    background-color: #ffcc00; /* Amarelo */
+    color: #003366; /* Azul escuro */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
 section {
     padding: 20px;
     margin: 20px;
@@ -40,19 +47,56 @@ section {
 }
 
 h2 {
-    color: #001f3f; /* Azul escuro */
+    color: #003366; /* Azul escuro */
 }
 
 .produto {
     margin: 15px 0;
+    padding: 15px;
+    background-color: #e6f7ff; /* Azul claro */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto:hover {
+    background-color: #b3e0ff; /* Azul mais claro */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #001f3f; /* Azul escuro */
+    background-color: #003366; /* Azul escuro */
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
 }
