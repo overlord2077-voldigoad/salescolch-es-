@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colchões Davi - Taquaralto, Palmas - TO</title>
+    <title>Sales Colchões - Taquaralto, Palmas - TO</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Colchões Davi</h1>
-        <p>Seu conforto em primeiro lugar</p>
+        <h1>Sales Colchões</h1>
+        <p>Conforto e qualidade para suas noites de sono</p>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#ofertas" class="cta-button">Ofertas Especiais</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>Localizada em Taquaralto, Palmas - TO, a Colchões Davi oferece a melhor seleção de colchões para garantir a sua qualidade de sono. Com anos de experiência, estamos aqui para ajudá-lo a encontrar o colchão ideal para suas necessidades.</p>
+        <p>Localizada em Taquaralto, Palmas - TO, a Sales Colchões oferece a melhor seleção de colchões para garantir a sua qualidade de sono. Com Davi, nosso especialista, estamos prontos para ajudar você a encontrar o colchão ideal.</p>
     </section>
 
     <section id="produtos">
         <h2>Produtos</h2>
-        <div class="produto">
+        <div class="produto" onclick="showDetails('Colchão Espuma', 'Colchão de alta densidade que proporciona conforto e suporte ideal.')">
             <h3>Colchão Espuma</h3>
-            <p>Colchão de alta densidade que proporciona conforto e suporte ideal.</p>
         </div>
-        <div class="produto">
+        <div class="produto" onclick="showDetails('Colchão Ortopédico', 'Desenvolvido para proporcionar o máximo de suporte para a sua coluna.')">
             <h3>Colchão Ortopédico</h3>
-            <p>Desenvolvido para proporcionar o máximo de suporte para a sua coluna.</p>
         </div>
-        <div class="produto">
+        <div class="produto" onclick="showDetails('Colchão de Molas', 'Conforto e durabilidade com tecnologia de molas ensacadas.')">
             <h3>Colchão de Molas</h3>
-            <p>Conforto e durabilidade com tecnologia de molas ensacadas.</p>
         </div>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
         <p>Para mais informações, entre em contato:</p>
-        <p><strong>Email:</strong> contato@colchoesdavi.com.br</p>
-        <p><strong>Telefone:</strong> (63) 99999-9999</p>
+        <p><strong>Email:</strong> contato@salescolchoes.com.br</p>
+        <p><strong>Telefone:</strong> (12) 99650-0827</p>
+    </section>
+
+    <section id="ofertas">
+        <h2>Ofertas Especiais</h2>
+        <p>Aproveite nossas promoções! Venha conferir na loja!</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Colchões Davi. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Sales Colchões. Todos os direitos reservados.</p>
     </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-</html>
+    </html>
